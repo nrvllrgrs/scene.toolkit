@@ -149,7 +149,7 @@ namespace UnityEngine.SceneManagement.Toolkit
 			}
 
 			m_activeSceneName = null;
-			m_thread = StartCoroutine(LoadThread(sceneNames));
+			m_thread = StartCoroutine(LoadThread(sceneNames, loadStreamMode));
 		}
 
 		[Button("Reset")]
